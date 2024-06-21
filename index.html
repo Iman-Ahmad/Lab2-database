@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Database Management</h1>
+    <div class="form-container">
+        <h2>Update Table</h2>
+        <form id="updateForm">
+            <label for="tableName">Table Name:</label>
+            <input type="text" id="tableName" name="tableName" required>
+
+            <label for="columnName">Column Name:</label>
+            <input type="text" id="columnName" name="columnName" required>
+
+            <label for="newValue">New Value:</label>
+            <input type="text" id="newValue" name="newValue" required>
+
+            <label for="rowId">Row ID:</label>
+            <input type="number" id="rowId" name="rowId" required>
+
+            <button type="submit">Update</button>
+        </form>
+        
+        <h2>Combine Tables</h2>
+        <form id="combineForm">
+            <label for="table1">Table 1:</label>
+            <input type="text" id="table1" name="table1" required>
+
+            <label for="table2">Table 2:</label>
+            <input type="text" id="table2" name="table2" required>
+
+            <button type="submit">Combine</button>
+        </form>
+        <div id="combineResult"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
